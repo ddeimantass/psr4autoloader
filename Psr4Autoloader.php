@@ -6,7 +6,7 @@ Class Psr4Autoloader{
     function register(): void{
         spl_autoload_register(function(string $className){
             foreach ($this->paths as $path) {                
-                if(strpos($className, $path["namespace"]) !== false){
+                if(strpos($className, $path["namespace"]) === 0 ){
                     $fileName = str_replace("\\", "/", substr($className, strlen($path["namespace"])));
                     $filePath = $path["directory"] . "{$fileName}.php";
                     if (file_exists($filePath)) {
