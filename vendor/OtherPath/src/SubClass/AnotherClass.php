@@ -1,10 +1,10 @@
 <?php
 
-namespace Nfq\Demo\SubClass;
+namespace Acme\Nfq\Demo\SubClass;
 
 Class AnotherClass{
 	function success (): void{
-		echo "AbotherClass success\n";
+		echo "Acme AbotherClass success\n";
 	}
 }
 

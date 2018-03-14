@@ -1,10 +1,10 @@
 <?php
 
-namespace Nfq\Demo;
+namespace Acme\Nfq\Demo;
 
 Class Test1{
 	function success (): void{
-		echo "Test1 success\n";
+		echo "Acme Test1 success\n";
 	}
 }
 
